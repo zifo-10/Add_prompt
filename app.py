@@ -9,7 +9,6 @@ st.sidebar.header("MongoDB Connection")
 mongo_uri = st.sidebar.text_input("Enter MongoDB URI", placeholder="mongodb://localhost:27017/")
 db_name = st.sidebar.text_input("Enter Database Name", value="testdb")
 collection_name = "prompt"
-connect = st.sidebar.button("Connect")
 
 # Establish MongoDB connection
 if mongo_uri and db_name:
